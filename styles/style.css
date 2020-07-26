@@ -1,0 +1,104 @@
+body{
+    background-color: white;
+    color:#828282
+
+}
+.header{
+    background-color: white;
+  
+    /* height: 200px; */
+}
+@font-face {
+    font-family: 'ibmflexbold';
+    src: url('images/fonts/IBMPlexSerif-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'bioRaime';
+    src: url('images/fonts/BioRhyme-Regular.ttf');
+}
+
+.banner-area{
+    background-color: rgb(242, 220, 243);
+    font-size:100%;
+    font:inherit;
+    font-family: ibmflexbold;
+    /* height: 300px; */
+}
+.banner-area h2{
+    color:#828282
+}
+.banner-text{
+    border-bottom: 2px solid #ADA5AD;
+    background-image: url('images/d1.svg');
+}
+.home-contant{
+    background-color: white;
+    font-family: bioRamime;
+}
+.icon-image{
+    list-style: none;
+     height: 50px; 
+     width: 50px;
+     border: 2px solid#D1CADA;
+     display: inline-block;
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+.footer{
+    margin-top: 7%;
+    font-family: bioRamime;
+}
+
+.contact-us li{
+ list-style: none;
+}
+.footer input{
+    background-color: #ECECEC;
+    height: 35px;
+    border: none;
+}
+.footer button{
+    border: none;
+    width: 84px;
+    height: 35px;
+    background-color: rgb(242, 220, 243);
+    border: none;
+}
+.carousel-item {
+    padding: 20px 40px;
+}
+.carousel-container{
+    width: 50%;
+}
+
+.footer{
+    margin-bottom: 3%;
+}
+
+.icon-instragram{
+    list-style: none;
+    height: 42px; 
+    width: 43px;
+    border: none;
+    display: inline-block;
+    /* display: inline-block; */
+    border-radius: 50%;
+    background-color: rgb(242, 220, 243);
+}
+
+footer li {
+    font-size: 14px;
+}
+
+#step-area{
+    display: none;
+}
+
+/* @media (min-width:px) and (max-width: 1450px) */
+@media (max-width: 480px){
+    .carousel-container{
+        width: 80%;
+    }
+}
