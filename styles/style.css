@@ -152,11 +152,16 @@ footer li {
 }
 		
 @-webkit-keyframes moving {
-    from {left:-3%;}
-    to {left: 3%;}
+    from {left:-5%;}
+    to {left: 5%;}
 }
 
 @keyframes moving {
-    from {left:-3%;}
-    to {left: 3%;}
+    from {left:-5%;}
+    to {left: 5%;}
+}
+
+.header a:hover{
+    background-color: #337ab7;
+    color: white;
 }
