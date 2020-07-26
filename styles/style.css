@@ -98,6 +98,47 @@ footer li {
     display: none;
 }
 
+/*-- fixed icon--*/
+.a-social-b {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+.a-social-b a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.a-social-b i {
+    font-size: 30px;
+}
+.social-icons a:hover i,
+.a-social-b a:hover i{
+    color: #eba439;
+    transition: all ease 0.5s;
+}
+.social-icons i,
+.a-social-b i {
+    color: #4939ff;
+}
+.social-icons a:hover,
+.a-social-b a:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
+}
+
 /* @media (min-width:px) and (max-width: 1450px) */
 @media (max-width: 480px){
     .carousel-container{
