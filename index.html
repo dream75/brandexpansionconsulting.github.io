@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
    <script>
-        function expandALL() {
-            console.log('as')
-          var x = document.getElementById("step-area").style;
-          if(x.display == 'none' || x.display == ''){
-            x.display = 'block';     
-            }
-            else{
-            x.display = 'none';
-            }
-        }
+        // function expandALL() {
+        //     console.log('as')
+        //   var x = document.getElementById("step-area").style;
+        //   if(x.display == 'none' || x.display == ''){
+        //     x.display = 'block';     
+        //     }
+        //     else{
+        //     x.display = 'none';
+        //     }
+        // }
+
+
+
+
+        
         </script>
 
 </head>
@@ -32,12 +37,12 @@
         <div class="container">
             <div class="row logo-image">
                 <div class="dropdown col-sm-1 d-flex align-items-center">
-                    <i style="font-size: 32px;" class="fa fa-bars" type="button" id="dropdownMenuButton"
+                    <i style="font-size: 46px;" class="fa fa-bars" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-expanded="false">
                     </i>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a style="cursor:pointer" class="dropdown-item" target="_blank" href="https://www.instagram.com/">Button1</a>
-                        <a style="cursor:pointer" class="dropdown-item" target="_blank" href="https://www.instagram.com/">Button2</a>
+                        <a style="cursor:pointer; font-size:30px" class="dropdown-item" target="_blank" href="https://www.instagram.com/">Button1&nbsp;<i class="fa fa-instagram"></i></a>
+                        <a style="cursor:pointer; font-size:30px" class="dropdown-item" target="_blank" href="https://www.instagram.com/">Button2 &nbsp;<i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-sm-10 text-center">
@@ -50,22 +55,22 @@
 
     <!-- banner area -->
     <section class="banner-area">
-        <div class="container text-center banner-text">
-            <div class="pb-2 pt-4">
-                <h2>WE</h2>
-                <h2>EXPAND</h2>
-                <h2>YOUR</h2>
-                <h2>BAND</h2>
+        <div class="container text-center banner-text w-50">
+            <div class="pb-5 pt-4">
+                <h2 id="moveText">WE</h2>
+                <h2 id="moveText">EXPAND</h2>
+                <h2 id="moveText">YOUR</h2>
+                <h2 id="moveText">BAND</h2>
             </div>
         </div>
-        <div class="container pt-5 pb-5">
+        <div class="container pt-5 pb-5" style="margin-top: 3%; margin-bottom: 3%;">
             <div class="row">
-                <div class="col-sm-4 text-center">
-                    <h2>WHAT</h2>
-                    <h2>WE</h2>
-                    <h2>DO</h2>
+                <div class="col-sm-4 text-center" id="moveText">
+                    <h2 id="moveText">WHAT</h2>
+                    <h2 id="moveText">WE</h2>
+                    <h2 id="moveText">DO</h2>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 d-flex align-items-center justify-content-end">
                     <p>
                         At Brand Expansion Consulting, we help infuencers' brand expand throug business ownership, built
                         from the ground up by our team.
@@ -79,93 +84,157 @@
 
     <!-- home-contant area -->
     <section class="home-contant mt-3">
-        <div class="container">
-            <h2 class="text-center">HOW THIS WORKS</h2>
-            <div class="row">
-                <div class="col-sm-6 mt-20 d-flex align-items-end">
-                    <div>
-                        <h4 style="font-weight:700">STEP 1</h4>
-                        <p>Our teams work with you to identify a roduct that you would be happy selling, and that your
-                            followers would love to buy</p>
+        <div class="container class_h4">
+            <h2 class="text-center how-this">HOW THIS WORKS</h2>
+            <!--Carousel Wrapper-->
+                  <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+
+                    <!--Slides and lightbox-->
+
+                    <div class="carousel-inner mdb-lightbox" role="listbox">
+                      <div id="mdb-lightbox-ui"></div>
+                      <!--First slide-->
+                      <div class=" carousel-item active">
+                      
+                        <div class="row">
+                          <div class="col-sm-6 mt-20 d-flex align-items-end">
+                              <div class="w-80">
+                                  <h4>STEP 1</h4>
+                                  <p>Our teams work with you to identify a roduct that you would be happy selling, and that your
+                                      followers would love to buy</p>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <img style="width: 80%;" src="images/cloud.png" alt="">
+                          </div>
+                      </div>
+                      
+                      </div>
+                      <!--/.First slide-->
+
+                      <!--Second slide-->
+                      <div class="carousel-item">
+                      
+                        <div class="row">
+                          <div class="col-sm-6 mt-20 d-flex align-items-end ">
+                              <div class="w-80">
+                                  <h4>STEP 2</h4>
+                                  <p> Our team legally creates your business from the ground up.</p>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <img style="width: 80%;" src="images/cloud 2.png" alt="">
+                          </div>
+                      </div>
+                      
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <img style="width: 80%;" src="images/cloud.png" alt="">
-                </div>
-            </div>
-            <div id="step-area">
-                <!-- <div class="row">
-                    <div class="col-sm-6 mt-20 d-flex align-items-end">
-                        <div>
-                            <h4 style="font-weight:700">STEP 1</h4>
-                            <p>Our teams work with you to identify a roduct that you would be happy selling, and that your
-                                followers would love to buy</p>
+                      <!--/.Second slide-->
+
+                      <!--Third slide-->
+                      <div class="carousel-item">
+                      
+                        <div class="row">
+                          <div class="col-sm-6 mt-20 d-flex align-items-end ">
+                              <div class=>
+                                  <h4>STEP 3</h4>
+                                  <p>Our team sources the product for you</p>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <img style="width: 80%;" src="images/cloud 3.png" alt="">
+                          </div>
+                      </div>
+                      
+                      </div>
+                      <!--/.Third slide-->
+
+                        <!--Fourth slide-->
+                        <div class="carousel-item">
+                      
+                          <div class="row">
+                            <div class="col-sm-6 mt-20 d-flex align-items-end ">
+                                <div class=>
+                                    <h4>STEP 4</h4>
+                                    <p>Our team establishes a website for you</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img style="width: 80%;" src="images/cloud4.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <img style="width: 80%;" src="images/cloud.png" alt="">
-                    </div>
-                </div> -->
-                <div class="row">
-                    <div class="col-sm-6 mt-20 d-flex align-items-end">
-                        <div>
-                            <h4 style="font-weight:700">STEP 2</h4>
-                            <p>Our team legally creates your business from the ground up.</p>
+                        
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <img style="width: 80%;" src="images/cloud 2.png" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 mt-20 d-flex align-items-end">
-                        <div>
-                            <h4 style="font-weight:700">STEP 3</h4>
-                            <p> Our team sources the product for you</p>
+                        <!--/.Fourth slide-->
+
+                         <!--Fifth slide-->
+                         <div class="carousel-item">
+                      
+                          <div class="row">
+                            <div class="col-sm-6 mt-20 d-flex align-items-end ">
+                                <div class="w-80">
+                                    <h4>STEP 5</h4>
+                                    <p>Our team creates a marketing strategy for you to execute</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img style="width: 80%;" src="images/cloud 5.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <img style="width: 80%;" src="images/cloud 3.png" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 mt-20 d-flex align-items-end">
-                        <div>
-                            <h4 style="font-weight:700">STEP 4</h4>
-                            <p> Our team establishes a website for you</p>
+                        
                         </div>
+                        <!--/.Fifth slide-->
+
                     </div>
-                    <div class="col-sm-6">
-                        <img style="width: 80%;" src="images/cloud4.png" alt="">
+                    <!--/.Slides-->
+
+
+
+                    <!--Controls-->
+                    <div class="controls-top container" style="margin-top: 5%;">
+                      <div class="icon text-center">
+                        <li class="icon-image">
+                           <a  href="#carousel-with-lb" data-slide="prev"><i
+                              style="margin: 23%;
+                                  color: #A349A4;
+                                 font-size: 35px;"
+                          class="	fa fa-long-arrow-left"></i></a>
+                          </li>
+
+                          <li class="icon-image">
+                            <a  href="#carousel-with-lb" data-slide="next"><i
+                               style="margin: 23%;
+                                   color: #A349A4;
+                                  font-size: 35px;"
+                           class="	fa fa-long-arrow-right"></i></a>
+                           </li>
                     </div>
-                </div>
-                 <div class="row">
-                <div class="col-sm-6 mt-20 d-flex align-items-end">
-                    <div>
-                        <h4 style="font-weight:700">STEP 5</h4>
-                        <p> Our team creates a marketing strategy for you to execute</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <img style="width: 80%;" src="images/cloud 5.png" alt="">
-                </div>
-            </div>
-            </div>
+                 </div>
+                    <!--/.Controls-->
+
+
+
+
+                  </div>
+                  <!--/.Carousel Wrapper-->
+       
         </div>
     
-        <div class="container" style="margin-top: 3%;">
+        <!-- <div class="container" style="margin-top: 3%;">
             <div class="icon text-center">
                 <li onclick="expandALL()" class="icon-image"><a>
-                        <i style="margin: 34%; color: #AE61AF;" class="fa fa-long-arrow-down"></i>
+                        <i style="    margin: 23%;
+                        color: #A349A4;
+                        font-size: 35px;" class="fa fa-long-arrow-down"></i>
                     </a>
                 </li>
             </div>
-        </div>
+        </div> -->
         <div  id="carosol-id">
         <div class="container">
-            <div class="text-center" style="margin-top: 20px; margin-bottom: 3%;">
+            <div class="text-center" style="margin-top: 4%; margin-bottom: 7%;">
                 <h4>IMAGINE YOUR POTENTIAL BUSINESS</h4>
-                <h4>EARNINGS BASED ON YOUR FOLLOWING</h4>
+                <h4 class="pt-3">EARNINGS BASED ON YOUR FOLLOWING</h4>
             </div>
         </div>
 
@@ -222,13 +291,6 @@
        </div>
     </section>
     <!-- home-contant area  -->
-    <!-- icon flex-->
-    <div class="a-social-b">
-            
-        <a href="#"><i class="fab fa-instagram"></i></a>                    
-        <a href="#"><i class="fab fa-instagram"></i></a>                    
-
-    </div>
 
     <!-- footer  -->
     <footer class="footer">
@@ -256,13 +318,13 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 contact-us">
-                    <p style="margin-bottom: 30px; margin-top: 23px;font-weight: 500;">CONTACT US</p>
+                    <p style="margin-bottom: 30px; margin-top: 23px;font-weight:bold;">CONTACT US</p>
                     <li>(310) 432-3290</li>
                     <li>Info@BrandExpansionConsulting.com</li>
                     <li>856 Cordia Extension Apt. 356, Lake, United State</li>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <p style="margin-bottom: 30px; margin-top: 23px; font-weight: 500;">Join With Us</p>
+                    <p style="margin-bottom: 30px; margin-top: 23px; font-weight:bold   ;">Join With Us</p>
                     <p>
                         <input type="text"><button>send</button>
                     </p>
@@ -271,6 +333,7 @@
         </div>
     </footer>
     <!-- footer -->
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
