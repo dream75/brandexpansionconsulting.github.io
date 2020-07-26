@@ -9,14 +9,14 @@ body{
     /* height: 200px; */
 }
 @font-face {
-    font-family: 'ibmflexbold-Bold';
+    font-family: 'ibmflexbold';
     src: url('images/fonts/IBMPlexSerif-Bold.ttf');
 }
 
-@font-face {
-    font-family: 'bioRhyme-Regular';
+/* @font-face {
+    font-family: 'bioRaime';
     src: url('images/fonts/BioRhyme-Regular.ttf');
-}
+} */
 
 .banner-area{
     background-color: rgb(242, 220, 243);
@@ -26,23 +26,21 @@ body{
     /* height: 300px; */
 }
 .banner-area h2{
-    font-size: 60px;
-    font-weight: bold;
     color:#828282
 }
 .banner-text{
-    border-bottom: 2px solid #ADA5AD;
+    border-bottom: 3px solid #828282;
     background-image: url('images/d1.svg');
 }
 .home-contant{
     background-color: white;
-    font-family: bioRamime;
+    font-family: 'BioRhyme';
 }
 .icon-image{
     list-style: none;
-     height: 50px; 
-     width: 50px;
-     border: 2px solid#D1CADA;
+    height: 77px;
+    width: 79px;
+     border: 2px solid#A349A4;
      display: inline-block;
      border-radius: 50%;
      cursor: pointer;
@@ -50,7 +48,7 @@ body{
 
 .footer{
     margin-top: 7%;
-    font-family: bioRamime;
+    font-family: 'BioRhyme';
 }
 
 .contact-us li{
@@ -97,51 +95,68 @@ footer li {
 #step-area{
     display: none;
 }
-
-/*-- fixed icon--*/
-.a-social-b {
-    position: fixed;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
+.banner-area h2{
+    font-size: 70px; font-weight: bold;
 }
-.a-social-b a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    padding: 0px;
-    margin: 10px;
-    line-height: 0px;
-    background-color: #ffffff;
-    border: 1px solid #cbcbcb;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+.how-this{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
-
-.a-social-b i {
-    font-size: 30px;
+.class_h4 h4{
+    font-weight:700; font-size: 46px;
 }
-.social-icons a:hover i,
-.a-social-b a:hover i{
-    color: #eba439;
-    transition: all ease 0.5s;
+.class_h4 p{
+    font-size:26px;
+     width: 75%;
 }
-.social-icons i,
-.a-social-b i {
-    color: #4939ff;
+.banner-area p{
+    font-size:26px;
+    width: 75%;
 }
-.social-icons a:hover,
-.a-social-b a:hover {
-    background-color: #000000;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    transition: all ease 0.5s;
+#carosol-id h4{
+    font-size: 40px;
 }
-
 /* @media (min-width:px) and (max-width: 1450px) */
 @media (max-width: 480px){
     .carousel-container{
         width: 80%;
     }
+    .banner-area h2{
+        font-size: 35px;
+    }
+    .how-this{
+        font-size: 32px;
+    }
+    .class_h4 h4{
+        font-size: 30px;
+    }
+    .class_h4 p{
+        font-size:18px;
+    }
+    .banner-area p{
+        font-size:18px;
+       
+    }
+    #carosol-id h4{
+        font-size: 20px;
+    }
+    
+}
+
+#moveText {
+    position: relative;
+    -webkit-animation: moving 5s infinite;
+    animation: moving 5s infinite;
+}
+		
+@-webkit-keyframes moving {
+    from {left:-3%;}
+    to {left: 3%;}
+}
+
+@keyframes moving {
+    from {left:-3%;}
+    to {left: 3%;}
 }
